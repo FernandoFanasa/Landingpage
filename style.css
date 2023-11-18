@@ -1,0 +1,798 @@
+/* Estilos generales para todos los tamaños de pantalla */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: #f893c2; */
+    
+}
+
+h2.Mensaje-descarga {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.tituloprincipal h1 {
+    color: #ffffff;
+}
+
+.Principal {
+    display: flex;
+    justify-content: center; /* Corrección */
+    align-items: center; /* Corrección */
+    background-color: #fa88bd;
+    margin-top: -7%;
+    padding: 0; /* Corrección */
+    background-image: url('./imagenes/thumbnail_banner-1920x600-Bayer_2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height:100vh; 
+}
+
+.tituloprincipal {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+
+
+.linea-separacion {
+    height: 1px;
+    background-color: white;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.Logo-FanasaRosa img {
+    width: 380px;
+    max-width: 60%; /* Para que la imagen se ajuste al ancho del contenedor */
+    margin-left: 100px;
+    margin-right: 20px;
+    height: auto;
+    margin-top: 20px;
+    
+}
+
+.Arrown img {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+/* Contenido de Marcas */
+.contenido-marcas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1% 0;
+    
+}
+
+.Liston-Rosa img {
+    top: -32px;
+    left: -159.34716796875px;
+    width: 352px;
+    height: 20px;
+    max-width: 50%;
+    max-height: 30%;
+    height: 40vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Terceraparte {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.imagen-y-boton {
+    display: flex;
+    align-items: center;
+    background-image: url('./imagenes/Group 17233.png');
+    background-size: cover; /* Cambia 'auto' a 'cover' para que la imagen se ajuste al centro */
+    background-repeat: no-repeat;
+    background-position: center center; /* Alinea el fondo al centro horizontal y verticalmente */
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    transform: scale(0.8);
+}
+
+.Liga-download:hover {
+    background-color: #FB91C2;
+}
+
+.Liga-download {
+    background-color: #F9A5CA;
+    color: white;
+    border: none;
+    border-radius: 42px;
+    margin-top: 180px;
+    margin-left: 290px;
+    margin-bottom: 60px;
+    padding: 20px 80px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none; /* Agrega la liga de descarga al botón */
+}
+
+.textos-colores {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 2%;
+    margin-bottom: -3%;
+}
+
+.parte-superior {
+    font-weight: bold; 
+    color: #219AD6; 
+}
+
+.parrafo-azul {
+    font-size: 34px; 
+    padding: 20px; 
+    color: #F9A5CA; 
+    width: 580px;
+}
+
+.hashtags {
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+    margin-top: -4%;
+    text-align: center;
+    color: #0048AA;
+}
+
+.Liston-Rosa {
+    text-align: center;
+    margin-bottom: -1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.container-derecho {
+    text-align: left;
+    margin-top: 0%;
+    width: 100%;
+    margin-bottom: 9%;
+    
+}
+
+footer {
+    font-size: 14px;
+    background-color: #1622A0;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.buscar {
+    display: flex;
+    border: 2px solid #1622A0;
+    border-radius: 50px; /* Esto crea la forma ovalada */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del borde redondeado */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 0; /* Para centrar el div horizontalmente */
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 50px 0 0 50px; /* Borde redondeado solo a la izquierda */
+  }
+  
+  .btn {
+    background-color: #1622A0;
+    padding: 10px 20px;
+    border-radius: 0 50px 50px 0; /* Borde redondeado solo a la derecha */
+    cursor: pointer;
+  }
+  
+  .btn p {
+    color: #fff;
+    margin: 0;
+  }
+
+/* Estilos para pantallas pequeñas (máximo 768px de ancho) celular */
+@media (max-width: 768px) {
+
+    /* Añade estilos para el menú de hamburguesa u ocultar elementos de navegación según sea necesario */
+    .navegacion {
+        display: none;
+        /* Oculta la navegación principal */
+    }
+
+    .hamburguesa {
+        display: block;
+        /* Muestra el icono de hamburguesa */
+    }
+
+    /* Ajusta el tamaño de la fuente y los elementos según sea necesario */
+    body {
+        font-size: 14px;
+        /* background-image: url('./tu-imagen-de-fondo.jpg'); */
+        /* Cambia la URL a tu imagen de fondo */
+        background-size: cover;
+        background-attachment: fixed;
+        /* Fija el fondo para que se desplace con el contenido */
+        background-repeat: no-repeat;
+    }
+
+    header {
+        padding: 10px 16px;
+        /* background-image: url('./tu-imagen-de-fondo.jpg'); */
+        /* Cambia la URL a tu imagen de fondo */
+        background-size: cover;
+        background-attachment: fixed;
+        /* Fija el fondo para que se desplace con el contenido */
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buscar {
+        width: 60%; /* Ancho al 100% para ocupar todo el espacio disponible */
+    }
+
+    .Principal {
+        margin-top: -40%;
+        height: 30vh; /* Ajusta la altura para pantallas pequeñas */
+    }
+
+    .tituloprincipal h1 {
+        font-size: 24px; /* Ejemplo de ajuste de tamaño de fuente */
+    }
+
+    .contenido-marcas {
+        /* Personaliza los estilos para pantallas pequeñas */
+        height: 40vh; /* Por ejemplo, ajusta la altura */
+    }
+
+    .imagen-empresas img {
+        width: 15%; /* Tamaño de ancho ajustado para pantallas pequeñas */
+        margin: 1%; /* Margen del 2% del contenedor en todos los lados */
+        margin-top: 7%;
+        margin-bottom: -7%;
+    }
+
+    .imagen-y-boton {
+        margin-left: 40px;
+        margin-right: 40px;
+        transform: scale(0.9);
+        background-size: cover;
+    }
+
+    .linea-separacion {
+        width: 80%; /* Reducir el ancho de la línea en pantallas pequeñas */
+    }
+
+    .Logo-FanasaRosa img {
+        width: 100%; /* Ajustar la imagen al 100% del ancho del contenedor en pantallas pequeñas */
+        max-width: none; /* Anular el máximo ancho en pantallas pequeñas */
+    }
+
+    .Liston-Rosa {
+        margin-bottom: 10px;
+    }
+
+    .Liston-Rosa img {
+        width: 80%; /* Ajusta el ancho de la imagen para pantallas pequeñas */
+    }
+
+    .textos-colores {
+        font-size: 14px;
+    }   
+
+    .parrafo-azul {
+        font-size: 24px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+    }
+
+    .hashtags {
+        /* Ajustes específicos para pantallas pequeñas */
+        width: 100%;
+        height: 8%;
+        padding: 1%;
+        font-size: 14px; /* Cambia el tamaño de fuente para pantallas pequeñas */
+    }   
+
+    .Terceraparte {
+        background-size: 100%; /* Ajusta el tamaño de fondo para pantallas pequeñas */
+    }
+
+    .Liga-download {
+        margin-top: 100px; /* Ajusta el margen superior */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-bottom: 30px; /* Ajusta el margen inferior */
+        padding: 10px 20px; /* Ajusta el padding del botón */
+    }
+
+    footer {
+        font-size: 12px;
+        background-color: #1622A0;
+        color: #FFFFFF;
+        padding: 0px;
+        text-align: center;
+        margin-top: 100%;
+    }
+
+    .container-izquierdo{
+        text-align: right;
+        margin-top: 10px;
+        width: 100%;
+        font-size: medium;
+    }
+    
+    .container-derecho {
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 2%;
+        width: 100%;
+        margin-bottom: -79px;
+        font-size: medium;
+    }
+
+    
+    img.img-fluid {
+        max-width: 100px; /* Establece el ancho máximo deseado */
+        max-height: 100px; /* Establece la altura máxima deseada */
+    }
+    
+    /* Estilo para los íconos de redes sociales */
+    i.fab {
+        font-size: 24px; /* Establece el tamaño deseado para los íconos */
+        margin: 0 10px; /* Añade margen entre los íconos */
+    }
+
+    /* Modifica otros estilos específicos para pantallas pequeñas */
+    /* Por ejemplo, ajusta el tamaño de las imágenes, márgenes, etc. */
+}
+
+/* Estilos para pantallas medianas (mínimo 769px y máximo 1024px de ancho) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Ajusta el tamaño de la fuente y los elementos según sea necesario */
+    body {
+        font-size: 16px;
+        background-image: url('./tu-imagen-de-fondo.jpg');
+        /* Cambia la URL a tu imagen de fondo */
+        background-size: cover;
+        background-attachment: fixed;
+        /* Fija el fondo para que se desplace con el contenido */
+        background-repeat: no-repeat;
+    }
+
+    header {
+        padding: 10px 32px;
+        background-image: url('./tu-imagen-de-fondo.jpg');
+        /* Cambia la URL a tu imagen de fondo */
+        background-size: cover;
+        background-attachment: fixed;
+        /* Fija el fondo para que se desplace con el contenido */
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buscar {
+        width: 60%; /* Ancho al 100% para ocupar todo el espacio disponible */
+    }
+
+    .Principal {
+        margin-top: -20%;
+        height: 40vh; /* Ajusta la altura para pantallas medianas */
+    }
+
+    .imagen-y-boton {
+        margin-left: 9px;
+        margin-right: 9px;
+        transform: scale(0.8);
+        background-size:contain;
+    }
+
+    .contenido-marcas {
+        /* Personaliza los estilos para pantallas medianas */
+        height: 60vh; /* Por ejemplo, ajusta la altura */
+    }
+
+    .imagen-empresas img {
+        width: 25%; /* Tamaño de ancho ajustado para pantallas medianas */
+        margin: 1%; /* Margen del 2% del contenedor en todos los lados */
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .linea-separacion {
+        width: 85%; /* Puedes ajustar el ancho según tus necesidades en pantallas medianas */
+    }
+
+    .Liston-Rosa {
+        margin-bottom: 15px;
+    }
+
+    .Liston-Rosa img {
+        width: 60%; /* Ajusta el ancho de la imagen para pantallas medianas */
+    }
+
+    .textos-colores {
+        font-size: 18px;
+    }
+
+    .parrafo-azul {
+        font-size: 28px; /* Ajusta el tamaño de fuente para pantallas medianas */
+        width: 80%; /* Ocupa el 80% del ancho disponible en pantallas medianas */
+    }
+
+    .hashtags {
+        /* Ajustes específicos para pantallas medianas */
+        width: 100%;
+        height: 10%;
+        padding: 2%;
+        font-size: 16px; /* Cambia el tamaño de fuente para pantallas medianas */
+    }
+
+    .Terceraparte {
+        background-size: 90%; /* Ajusta el tamaño de fondo para pantallas medianas */
+    }
+
+    footer {
+        background-color: #1622A0;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    
+    .container-izquierdo{
+        text-align: right;
+        margin-top: 0px;
+        width: 100%;
+        
+    }
+    
+    .container-derecho {
+        text-align: left;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: -79px;
+        
+    }
+
+    .tituloprincipal h1 {
+        font-size: 32px; /* Ejemplo de ajuste de tamaño de fuente */
+    }
+
+    /* Modifica otros estilos específicos para pantallas medianas */
+    /* Por ejemplo, ajusta el tamaño de las imágenes, márgenes, etc. */
+}
+
+/* Estilos para pantallas grandes (más de 1024px de ancho) */
+@media (min-width: 1025px) {
+
+    /* Ajusta el tamaño de la fuente y los elementos según sea necesario */
+    body {
+        font-size: 18px;
+        background-image: url('./tu-imagen-de-fondo.jpg');
+        /* Cambia la URL a tu imagen de fondo */
+        background-size: cover;
+        background-attachment: fixed;
+        /* Fija el fondo para que se desplace con el contenido */
+        background-repeat: no-repeat;
+    }
+
+    header {
+        background-color: #F9A5CA;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 32px;
+        position: relative;
+        z-index: 1;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buscar {
+        width: 20%; /* Ancho al 100% para ocupar todo el espacio disponible */
+    }
+
+    .Principal {
+        margin-top: -4%;
+        height: 50vh; /* Ajusta la altura para pantallas grandes */
+    }
+
+    .contenido-marcas {
+        /* Personaliza los estilos para pantallas grandes */
+        height: 80vh; /* Por ejemplo, ajusta la altura */
+    }
+
+    .linea-separacion {
+        width: 90%; /* Ajusta el ancho de la línea en pantallas grandes si es necesario */
+    }
+
+    .Liston-Rosa {
+        margin-bottom: 20px;
+    }
+
+    .Liston-Rosa img {
+        width: 40%; /* Ajusta el ancho de la imagen para pantallas grandes */
+    }
+
+    .textos-colores {
+        font-size: 20px;
+    }
+
+    .parrafo-azul {
+        font-size: 34px; /* Tamaño de fuente original para pantallas grandes */
+        width: 580px; /* Ancho original para pantallas grandes */
+    }
+
+    .hashtags {
+        /* Ajustes específicos para pantallas grandes */
+        width: 100%;
+        height: 12%;
+        padding: 3%;
+        font-size: 18px; /* Cambia el tamaño de fuente para pantallas grandes */
+    }
+
+    .imagen-empresas img {
+        width: 30%; /* Tamaño de ancho ajustado para pantallas grandes */
+        margin: 2%; /* Margen del 2% del contenedor en todos los lados */
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .imagen-y-boton {
+        margin-left: 80px;
+        margin-right: 80px;
+        transform: scale(0.8);
+    }
+
+    .Terceraparte {
+        background-size: 100%; /* Tamaño de fondo predeterminado para pantallas grandes */
+    }
+    
+    footer {
+        background-color: #1622A0;
+        color: #FFFFFF;
+        padding: 50px;
+        text-align: center;
+        margin-top: 19%;
+        font-size: 18px;
+    }
+
+    .container-izquierdo{
+        text-align: right;
+        margin-top: -20px;
+        width: 100%;
+        margin-bottom: -80px;
+        font-size: 18px;
+    }
+    
+    .container-derecho {
+        text-align: left;
+        margin-top: -20px;
+        width: 100%;
+        margin-bottom: -100px;
+        font-size: 20px;
+        
+    }
+
+    .tituloprincipal h1 {
+        font-size: 48px; /* Ejemplo de ajuste de tamaño de fuente */
+    }
+    /* Modifica otros estilos específicos para pantallas grandes */
+    /* Por ejemplo, ajusta el tamaño de las imágenes, márgenes, etc. */
+}
+
+/* Estilos para pantallas pequeñas (máximo 768px de ancho) celular */
+@media (max-width: 320px) {
+
+    /* Añade estilos para el menú de hamburguesa u ocultar elementos de navegación según sea necesario */
+    .navegacion {
+        display: none;
+        /* Oculta la navegación principal */
+    }
+
+    .hamburguesa {
+        display: block;
+        /* Muestra el icono de hamburguesa */
+    }
+
+    /* Ajusta el tamaño de la fuente y los elementos según sea necesario */
+    body {
+        font-size: 14px;
+        background-image: url('./tu-imagen-de-fondo.jpg');
+        /* Cambia la URL a tu imagen de fondo */
+        background-size: cover;
+        background-attachment: fixed;
+        /* Fija el fondo para que se desplace con el contenido */
+        background-repeat: no-repeat;
+    }
+
+    header {
+        padding: 10px 16px;
+        background-image: url('./tu-imagen-de-fondo.jpg');
+        /* Cambia la URL a tu imagen de fondo */
+        background-size: cover;
+        background-attachment: fixed;
+        /* Fija el fondo para que se desplace con el contenido */
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buscar {
+        width: 60%; /* Ancho al 100% para ocupar todo el espacio disponible */
+    }
+
+    .Principal {
+        margin-top: -130%;
+        height: 30vh; /* Ajusta la altura para pantallas pequeñas */
+    }
+
+    .tituloprincipal h1 {
+        font-size: 24px; /* Ejemplo de ajuste de tamaño de fuente */
+    }
+
+    .contenido-marcas {
+        /* Personaliza los estilos para pantallas pequeñas */
+        height: 40vh; /* Por ejemplo, ajusta la altura */
+    }
+
+    .imagen-empresas img {
+        width: 15%; /* Tamaño de ancho ajustado para pantallas pequeñas */
+        margin: 1%; /* Margen del 2% del contenedor en todos los lados */
+        margin-top: 17%;
+        margin-bottom: -16%;
+    }
+
+    .linea-separacion {
+        width: 80%; /* Reducir el ancho de la línea en pantallas pequeñas */
+    }
+
+    .Logo-FanasaRosa img {
+        width: 90%; /* Ajustar la imagen al 100% del ancho del contenedor en pantallas pequeñas */
+        max-width: none; /* Anular el máximo ancho en pantallas pequeñas */
+    }
+
+
+    .Liston-Rosa img {
+        width: 50%; /* Ajusta el ancho de la imagen para pantallas pequeñas */
+        height: -300%;
+        transform: scale(0.9);
+        background-size:cover;
+    }
+
+    .textos-colores {
+        font-size: 14px;
+    }   
+
+    .parrafo-azul {
+        font-size: 24px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+    }
+
+    .hashtags {
+        /* Ajustes específicos para pantallas pequeñas */
+        width: 100%;
+        height: 8%;
+        padding: 1%;
+        font-size: 14px; /* Cambia el tamaño de fuente para pantallas pequeñas */
+    }   
+
+    .Terceraparte {
+        background-size: 100%; /* Ajusta el tamaño de fondo para pantallas pequeñas */
+    }
+
+    .Liga-download {
+        margin-top: 100px; /* Ajusta el margen superior */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-bottom: 30px; /* Ajusta el margen inferior */
+        padding: 1px 5px; /* Ajusta el padding del botón */
+    }
+
+    footer {
+        background-color: #1622A0;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        margin-top: 100%;
+        font-size: 12px;
+    }
+
+    .container-izquierdo{
+        text-align: right;
+        text-justify:distribute;
+        text-size-adjust:initial;
+        margin-left: -1%;
+        margin-top: -37px;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .imagen-y-boton {
+        margin-left: 20px;
+        margin-right: 20px;
+        transform: scale(1.0);
+        background-size:contain;
+    }
+    
+    .container-derecho {
+        text-align:left;
+        text-justify:distribute;
+        text-size-adjust:initial;
+        margin-top: -12px;
+        width: 100%;
+        margin-bottom: -9px;
+        font-size: 12px;
+    }
+    
+    img.img-fluid {
+        max-width: 100px; /* Establece el ancho máximo deseado */
+        max-height: 100px; /* Establece la altura máxima deseada */
+    }
+    
+    /* Estilo para los íconos de redes sociales */
+    i.fab {
+        font-size: 24px; /* Establece el tamaño deseado para los íconos */
+        margin: 0 10px; /* Añade margen entre los íconos */
+    }
+    /* Modifica otros estilos específicos para pantallas pequeñas */
+    /* Por ejemplo, ajusta el tamaño de las imágenes, márgenes, etc. */
+}

@@ -1,0 +1,290 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+    background-image: url('./tu-imagen-de-fondo.jpg'); /* Cambia la URL a tu imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed; /* Fija el fondo para que se desplace con el contenido */
+    background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+    background-color: #1622A0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 32px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Main Styles */
+main {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #0048AA;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container-izquierdo{
+    text-align: right;
+    margin-top: 0px;
+    width: 100%;
+    
+}
+
+.container-derecho {
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: -79px;
+    
+}
+
+/* Principal Section Styles */
+.Principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 34, 160, 0.8); /* Color de fondo con opacidad */
+    width: 100%;
+    padding: 20px 0;
+    background-image: url('./imagenes/FONDO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50vh;
+}
+
+.linea-separacion {
+    height: 1px;
+    background-color: white;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.Logo-FanasaRosa img {
+    width: 580px; 
+    max-width: 580px;
+    height: auto; 
+    margin-top: 20px;
+}
+
+.tituloprincipal {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.tituloprincipal h1 {
+    color: #ffffff;
+}
+
+h2.Mensaje-descarga {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.Liga-download {
+    background-color: #F9A5CA;
+    color: white;
+    border: none;
+    border-radius: 21px;
+    margin-top: 260px;
+    margin-bottom: 60px;
+    padding: 20px 80px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none; /* Agrega la liga de descarga al botón */
+}
+
+.Terceraparte {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: -20vh;
+    background-image: url('./imagenes/Group\ 17233.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 400px;
+
+}
+
+.imagen-y-boton {
+    display: flex;
+    align-items: center;
+}
+
+.Liga-download:hover {
+    background-color: #FB91C2;
+}
+
+
+/* Contenido de Marcas */
+.contenido-marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 20px 0;
+    background-image: url('./imagenes/FONDO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 67vh;
+
+}
+
+
+.imagen-empresas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0;
+}
+
+
+.imagen-empresas img {
+    width: 220px; 
+    max-width: 576px;
+    height: auto; 
+    margin: 10px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+}
+
+.Arrown img {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+
+.tituloprincipal {
+    top: auto;
+    left: auto;
+    height: auto;
+    width: auto;
+    color: #050505;
+}
+
+
+
+.Liston-Rosa {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.Liston-Rosa img {
+    top: -732px;
+    left: -159.34716796875px;
+    width: 552px;
+    height: -180px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 40vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-colores {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.parte-superior {
+    font-weight: bold; 
+    color: #219AD6; 
+}
+
+.parrafo-azul {
+    font-size: 34px; 
+    padding: 20px; 
+    color: #F9A5CA; 
+    width: 580px;
+}
+
+.hashtags {
+    width: 200px;
+    height: 10px;
+    padding: 2px;
+    text-align: center;
+    color: #0048AA;
+}
+
+.footer{
+    background-color: #0048AA;
+}
+
+
+.buscar {
+    display: flex;
+    border: 2px solid #1622A0;
+    border-radius: 50px; /* Esto crea la forma ovalada */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del borde redondeado */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 0; /* Para centrar el div horizontalmente */
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 50px 0 0 50px; /* Borde redondeado solo a la izquierda */
+  }
+  
+  .btn {
+    background-color: #1622A0;
+    padding: 10px 20px;
+    border-radius: 0 50px 50px 0; /* Borde redondeado solo a la derecha */
+    cursor: pointer;
+  }
+  
+  .btn p {
+    color: #fff;
+    margin: 0;
+  }
+
+
+  
